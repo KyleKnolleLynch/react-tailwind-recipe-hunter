@@ -11,12 +11,10 @@ const App = () => {
   const [term, setTerm] = useState('');
 
   useEffect(() => {
+    const BASE_URL = `https://cors-anywhere.herokuapp.com/http://www.recipepuppy.com/api/?&q=${term}&p=10`;
     const getRecipes = async () => {
       try {
-        const proxyurl = 'https://cors-anywhere.herokuapp.com/';
-        let res = await fetch(
-          `${proxyurl}http://www.recipepuppy.com/api/?&q=${term}&p=10`
-        );
+        let res = await fetch(BASE_URL);
         res = await res.json();
         setRecipes(res.results);
         setLoading(false);
