@@ -20,7 +20,7 @@ const SearchBar = ({ setSearchTerm }) => {
           value={val}
           onChange={(e) => setVal(e.target.value)}
         />
-        <button className='bg-transparent text-pink-500 border border-pink-500 hover:border-transparent hover:bg-pink-500 hover:text-white rounded px-4 py-2 font-bold shadow focus:outline-none'>
+        <button className='bg-transparent text-pink-500 border border-pink-500 hover:border-transparent hover:bg-pink-500 hover:text-white rounded px-4 py-2 font-bold shadow focus:outline-none transition ease-out duration-500'>
           Search
         </button>
       </div>

@@ -36,10 +36,10 @@ const Card = ({ recipe: { title, thumbnail, ingredients, href } }) => {
           </li>
         </ul>
       </div>
-      <div className='px-6 py-4'>
+      <div className='px-2 py-4'>
         <span
           onClick={() => setLike(!like)}
-          className='bg-teal-200 rounded-full px-3 py-2 mr-3 text-sm cursor-pointer'
+          className='bg-teal-200 rounded-full px-3 py-2 mr-2 text-sm cursor-pointer'
         >
           <strong>Like: </strong>
           <span className={like ? 'text-pink-500 ' : 'text-gray-700 '}>
@@ -58,7 +58,7 @@ const Card = ({ recipe: { title, thumbnail, ingredients, href } }) => {
         </span>
         <span
           onClick={() => setFav(!fav)}
-          className='bg-teal-200 rounded-full px-3 py-2 mr-3 text-sm cursor-pointer'
+          className='bg-teal-200 rounded-full px-3 py-2 mr-2 text-sm cursor-pointer'
         >
           <strong>Favorite: </strong>
           <span className={fav ? 'text-yellow-500 ' : 'text-gray-700 '}>
